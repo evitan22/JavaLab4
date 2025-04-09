@@ -2,10 +2,14 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class MyCollection {
-    List<Audience> myList = new ArrayList<>();
+    ArrayList<Audience> myList = new ArrayList<>();
     
     public MyCollection(Audience[] arr) {
         this.myList.addAll(new HashSet<Audience>(Arrays.asList(arr)));
+    }
+
+    public List<Audience> getList() {
+        return this.myList;
     }
 
     public void show() {
